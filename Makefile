@@ -2,7 +2,7 @@ all: hello
 
 install: hello
 	mkdir -p $(DESTDIR)/usr/sbin/
-	install -o root -m 555 hello $(DESTDIR)/usr/sbin/hello
+	install -m 555 hello $(DESTDIR)/usr/sbin/hello
 
 clean:
 	rm hello
